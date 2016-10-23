@@ -1,0 +1,143 @@
+{
+  "positions": [
+    {
+      "name": "Mount",
+      "imagePath": "./mount.png",
+      "steps": []
+    },
+    {
+      "name": "Guard",
+      "imagePath": "./guard.png",
+      "steps": []
+    },
+    {
+      "name": "Side Mount",
+      "imagePath": "./side-mount.png",
+      "steps": []
+    },
+    {
+      "name": "Back Mount",
+      "imagePath": "./back-mount.png",
+      "steps": []
+    },
+    {
+      "name": "North South",
+      "imagePath": "./north-south.png",
+      "steps": []
+    },
+    {
+      "name": "Scarf Hold",
+      "imagePath": "./scarf-hold.png",
+      "steps": []
+    },
+    {
+      "name": "Knee On Chest / Stomach",
+      "imagePath": "./knee-on-chest-stomach.png",
+      "steps": []
+    }
+  ],
+  "chokes": [
+    {
+      "name": "Collar Choke",
+      "imagePath": "./todo.png",
+      "fromPosition": "Guard"
+    },
+    {
+      "name": "Underarm Collar Choke",
+      "imagePath": "./todo.png",
+      "fromPosition": "Guard"
+    },
+    {
+      "name": "Front Collar Scissor Choke",
+      "imagePath": "./todo.png",
+      "fromPosition": "Guard"
+    },
+    {
+      "name": "Front Naked Choke",
+      "imagePath": "./todo.png",
+      "fromPosition": "Guard"
+    },
+    {
+      "name": "Guillotine Choke",
+      "imagePath": "./todo.png",
+      "fromPosition": "Guard"
+    },
+    {
+      "name": "Lion Killer Choke",
+      "imagePath": "./todo.png",
+      "fromPosition": "Back Mount"
+    },
+    {
+      "name": "Rear (Naked) Choke",
+      "imagePath": "./todo.png",
+      "fromPosition": "Guard"
+    },
+    {
+      "name": "Sliding Collar Choke",
+      "imagePath": "./todo.png",
+      "fromPosition": "Back Mount"
+    },
+    {
+      "name": "Side Mount Choke",
+      "imagePath": "./todo.png",
+      "fromPosition": "Side Mount"
+    },
+    {
+      "name": "Thrusting Choke",
+      "imagePath": "./todo.png",
+      "fromPosition": "Guard"
+    },
+    {
+      "name": "Triangle Choke",
+      "imagePath": "./todo.png",
+      "fromPosition": "Guard"
+    },
+    {
+      "name": "Rear Scissor Choke",
+      "imagePath": "./todo.png",
+      "fromPosition": "Guard"
+    }
+  ],
+  "armLocks": [
+    {
+      "name": "Americana",
+      "variations": ["Side Mount", "Mount"]
+    },
+    {
+      "name": "Kimura",
+      "variations": ["Guard", "Side Mount"]
+    },
+    {
+      "name": "Shoulder Lock",
+      "variations": ["Side Mount", "Scarf Hold"]
+    },
+    {
+      "name": "Arm Bar",
+      "variations": ["Mount", "Guard"]
+    },
+    {
+      "name": "Omoplata"
+    }
+  ],
+  "legLocks": [
+    {
+      "name": "Achilles Ankle Lock",
+      "imagePath": "./todo.png",
+      "fromPosition": "Guard"
+    },
+    {
+      "name": "Knee Bar",
+      "imagePath": "./todo.png",
+      "fromPosition": "Guard"
+    },
+    {
+      "name": "Leg Lock",
+      "imagePath": "./todo.png",
+      "fromPosition": "Half Guard"
+    },
+    {
+      "name": "Heel Hook",
+      "imagePath": "./todo.png"
+    }
+  ]
+}
