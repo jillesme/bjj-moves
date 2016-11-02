@@ -11,16 +11,17 @@
   padding: 1px 3px;
 }
 
-.MovesList ul li {
+.MovesList > ul > li:first-child {
   padding: 2px 0;
+  color: #F00;
   list-style: none;
 }
 
-.MovesList ul li a {
-  text-decoration: none;
+.MovesList ul ul li {
+  text-indent: 10px;
 }
 
-.MovesList ul li a:hover {
+.MovesList ul ul li:hover {
   text-decoration: underline;
   cursor: pointer;
 }
