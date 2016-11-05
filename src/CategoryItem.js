@@ -1,13 +1,18 @@
 import React from 'react';
 
-const CategoryItem = (props) => {
-  const html = () => {
-    return {
-      __html: props.highlight ? props.item.split(props.highlight).join(`<strong>${props.highlight}</strong>`) : props.item
-    }
-  }
-
-  return <span dangerouslySetInnerHTML={html()}></span>
+const CategoryItem = ({ item, highlight }) => {
+  return (
+    <span>
+      {item
+          .split(highlight)
+          .map((part, i, arr) => {
+            return (<span>
+              {part}
+              { i !== arr.length -1 ? <strong>{highlight}</strong> : ''}
+            </span>);
+          })}
+        </span>
+  );
 }
 
 export default CategoryItem;
