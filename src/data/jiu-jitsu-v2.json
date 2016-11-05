@@ -1,0 +1,66 @@
+{
+  "Positions": {
+    "default-mount": {
+      "name": "Mount",
+      "imageName": "mount.png"
+    },
+    "default-guard": {
+      "name": "Guard",
+      "imageName": "guard.png"
+    },
+    "side-mount": {
+      "name": "Side Mount",
+      "imageName": "side-mount.png"
+    },
+    "back-mount": {
+      "name": "Back Mount",
+      "imageName": "back-mount.png"
+    }
+  },
+  "Chokes": {
+    "collar-choke": {
+      "name": "Collar Choke",
+      "imageName": "collar-choke.png"
+    },
+    "guillotine-choke": {
+      "name": "Guillotine Choke",
+      "imageName": "guillotine-choke.png"
+    },
+    "rear-naked-choke": {
+      "name": "Rear Naked Choke",
+      "imageName": "rear-naked-choke.png"
+    }
+  },
+  "Arm Locks": {
+    "americana": {
+      "name": "Americana",
+      "imageName": "americana.png"
+    },
+    "kimura": {
+      "name": "Kimura",
+      "imageName": "kumura.png"
+    },
+    "arm-bar": {
+      "name": "Arm Bar",
+      "imageName": "arm-bar.png"
+    },
+    "omaplata": {
+      "name": "Omoplata",
+      "imageName": "omoplata.png"
+    }
+  },
+  "Leg Locks": {
+    "knee-bar": {
+      "name": "Knee Bar",
+      "imageName": "./knee-bar.png"
+    },
+    "leg-lock": {
+      "name": "Leg Lock",
+      "imageName": "./leg-lock.png"
+    },
+    "heel-hook": {
+      "name": "Heel Hook",
+      "imageName": "./heel-hook.png"
+    }
+  }
+}

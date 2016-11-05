@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router'
 import CategoryItem from './CategoryItem';
 
 const Category = ({ title, items, filteredBy }) => {
@@ -9,10 +10,13 @@ const Category = ({ title, items, filteredBy }) => {
       <li>
         <ul>
           {
-            items
-              .filter(item => new RegExp(filteredBy, 'gi').test(item.name))
-              .map((item, i) => {
-                return <li key={i}><CategoryItem item={item.name} highlight={filteredBy} /></li>;
+            Object.keys(items)
+              .map(url => { return { url, data: items[url] }; })
+              .filter(move => new RegExp(filteredBy, 'gi').test(move.data.name))
+              .map((move, i) => {
+                return (<li key={i}><Link to={"/move/"+ move.url} activeClassName="active">
+                  <CategoryItem item={move.data.name} highlight={filteredBy} />
+              </Link></li>);
               })
           }
         </ul>

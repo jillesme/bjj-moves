@@ -25,3 +25,11 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+.MovesList ul ul li a {
+  color: blue;
+}
+
+.MovesList ul ul li a.active:before {
+  content: '👀';
+}
