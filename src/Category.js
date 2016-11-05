@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CategoryItem from './CategoryItem';
-import store from './store.js';
+import store from './redux/store.js';
 
 class Category extends Component {
   constructor() {

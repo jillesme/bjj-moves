@@ -3,7 +3,8 @@ import SideBar from './SideBar.js';
 import Category from './Category.js';
 import './App.css';
 
-const moves = require('./jiu-jitsu.json');
+const moves = require('./data/jiu-jitsu.json');
+
 class App extends Component {
   render() {
     return (
