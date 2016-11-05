@@ -1,33 +1,32 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
 import CategoryItem from './CategoryItem';
-import store from './redux/store.js';
 
-class Category extends Component {
-  constructor() {
-    super();
-    this.state = store.getState();
-    this.unsubscribe = store.subscribe(() => {
-      this.setState(store.getState())
-    });
-  }
-  render() {
-    return (
-      <ul>
-        <li>{this.props.title}</li>
-        <li>
-          <ul>
-            {
-              this.props.items
-              .filter(item => new RegExp(this.state.filteredBy, 'gi').test(item.name))
+const Category = ({ title, items, filteredBy }) => {
+  return (
+    <ul>
+      <li>{title}</li>
+      <li>
+        <ul>
+          {
+            items
+              .filter(item => new RegExp(filteredBy, 'gi').test(item.name))
               .map((item, i) => {
-                return <li key={i}><CategoryItem item={item.name} highlight={this.state.filteredBy} /></li>;
+                return <li key={i}><CategoryItem item={item.name} highlight={filteredBy} /></li>;
               })
-            }
-          </ul>
-        </li>
-      </ul>
-        );
-  }
+          }
+        </ul>
+      </li>
+    </ul>
+  );
 }
 
-export default Category;
+const mapStateToProps = (state) => {
+  return {
+    filteredBy: state.filteredBy
+  }
+};
+
+export default connect(
+  mapStateToProps
+)(Category);

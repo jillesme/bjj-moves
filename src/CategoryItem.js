@@ -6,7 +6,7 @@ const CategoryItem = ({ item, highlight }) => {
       {item
           .split(highlight)
           .map((part, i, arr) => {
-            return (<span>
+            return (<span key={i}>
               {part}
               { i !== arr.length -1 ? <strong>{highlight}</strong> : ''}
             </span>);
