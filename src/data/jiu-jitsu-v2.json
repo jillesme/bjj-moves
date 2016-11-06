@@ -2,65 +2,79 @@
   "Positions": {
     "default-mount": {
       "name": "Mount",
-      "imageName": "mount.png"
+      "imageName": "mount.png",
+      "markdown": "data/positions/mount.md"
     },
     "default-guard": {
       "name": "Guard",
-      "imageName": "guard.png"
+      "imageName": "guard.png",
+      "markdown": "data/positions/guard.md"
     },
     "side-mount": {
       "name": "Side Mount",
-      "imageName": "side-mount.png"
+      "imageName": "side-mount.png",
+      "markdown": "data/positions/sidemount.md"
     },
     "back-mount": {
       "name": "Back Mount",
-      "imageName": "back-mount.png"
+      "imageName": "back-mount.png",
+      "markdown": "data/positions/backmount.md"
     }
   },
   "Chokes": {
     "collar-choke": {
       "name": "Collar Choke",
-      "imageName": "collar-choke.png"
+      "imageName": "collar-choke.png",
+      "markdown": "data/chokes/collar-choke.md"
     },
     "guillotine-choke": {
       "name": "Guillotine Choke",
-      "imageName": "guillotine-choke.png"
+      "imageName": "guillotine-choke.png",
+      "markdown": "data/chokes/guillotine-choke.md"
     },
     "rear-naked-choke": {
       "name": "Rear Naked Choke",
-      "imageName": "rear-naked-choke.png"
+      "imageName": "rear-naked-choke.png",
+      "markdown": "data/chokes/rear-naked-choke.md"
     }
   },
   "Arm Locks": {
     "americana": {
       "name": "Americana",
-      "imageName": "americana.png"
+      "imageName": "americana.png",
+      "markdown": "data/armlocks/americana.md"
     },
     "kimura": {
       "name": "Kimura",
-      "imageName": "kumura.png"
+      "imageName": "kumura.png",
+      "markdown": "data/armlocks/kimura.md"
     },
     "arm-bar": {
       "name": "Arm Bar",
-      "imageName": "arm-bar.png"
+      "imageName": "arm-bar.png",
+      "markdown": "data/armlocks/arm-bar.md"
     },
     "omaplata": {
       "name": "Omoplata",
-      "imageName": "omoplata.png"
+      "imageName": "omoplata.png",
+      "markdown": "data/armlocks/omoplata.md"
     }
   },
   "Leg Locks": {
     "knee-bar": {
       "name": "Knee Bar",
-      "imageName": "./knee-bar.png"
+      "imageName": "./knee-bar.png",
+      "markdown": "data/leglocks/knee-bar.md"
     },
     "leg-lock": {
       "name": "Leg Lock",
-      "imageName": "./leg-lock.png"
+      "imageName": "./leg-lock.png",
+      "markdown": "data/leglocks/leg-lock.md"
     },
     "heel-hook": {
       "name": "Heel Hook",
-      "imageName": "./heel-hook.png"
+      "imageName": "./heel-hook.png",
+      "markdown": "data/leglocks/heel-hook.md"
     }
   }
 }
