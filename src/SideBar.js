@@ -5,7 +5,9 @@ import { filterMoves } from './redux/actions.js';
 const SideBar = ({ userTyped, children }) => {
     return (
       <aside className="MovesList">
-        <input type="text" onChange={userTyped} />
+        <div className="search">
+          <input type="text" onChange={userTyped} placeholder="Filter moves..." />
+        </div>
         {children}
       </aside>
     );
