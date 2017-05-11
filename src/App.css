@@ -23,6 +23,29 @@ body {
   color: #000;
 }
 
+h1 {
+  font-size: 32px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 28px;
+  line-height: 32px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 28px;
+}
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+p, h1, h2, h3 {
+  margin-bottom: 20px;
+}
+p {
+  font-size: 18px;
+  line-height: 26px;
+}
+
 #root {
   padding: 40px;
 }
@@ -39,7 +62,7 @@ header {
   border-bottom: solid 1px #CCC;
 }
 header h1 {
-  text-transform: uppercase;
+  margin: 0;
 }
 
 .content {
