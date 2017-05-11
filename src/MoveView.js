@@ -15,7 +15,7 @@ class MoveView extends Component {
     const file = this.findMarkdownFile(params.moveUrl);
 
     return (
-      <div>
+      <div style={{padding: '20px'}}>
         <ReactMarkdown source={require('raw!./' + file)} />
       </div>
     )
