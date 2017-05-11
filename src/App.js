@@ -18,19 +18,20 @@ class ActualApp extends Component {
   render() {
     return (
       <Provider store={store}>
-        <div className="App">
-          <Header></Header>
-          
+        <div className="App clearfix">
           <SideBar>
             {Object.keys(moves).map((move, k) => {
               return <Category key={k} title={move} items={moves[move]} />
             })}
           </SideBar>
 
-          <div style={{ height: '500px', width: '500px', border: '1px solid green', float: 'right '}}>
-            {this.props.children}
-          </div>
+          <div className="content">
+            <Header></Header>
 
+            <div>
+              {this.props.children}
+            </div>
+          </div>
         </div>
       </Provider>
     );
