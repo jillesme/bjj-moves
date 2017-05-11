@@ -4,16 +4,36 @@
 }
 
 body {
-  background:
-    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-  background-color: #131313;
-  background-size: 20px 20px;
-  color: #FFF;
+  background-color:#F2F2F2;
+  background-image:
+    radial-gradient(circle at 100% 150%, #F2F2F2 24%, white 25%, white 28%, #F2F2F2 29%, #F2F2F2 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, #F2F2F2 24%, white 25%, white 28%, #F2F2F2 29%, #F2F2F2 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, white 10%, #F2F2F2 11%, #F2F2F2 23%, white 24%, white 30%, #F2F2F2 31%, #F2F2F2 43%, white 44%, white 50%, #F2F2F2 51%, #F2F2F2 63%, white 64%, white 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, white 5%, #F2F2F2 6%, #F2F2F2 15%, white 16%, white 20%, #F2F2F2 21%, #F2F2F2 30%, white 31%, white 35%, #F2F2F2 36%, #F2F2F2 45%, white 46%, white 49%, transparent 50%, transparent),
+    radial-gradient(circle at 0    50%, white 5%, #F2F2F2 6%, #F2F2F2 15%, white 16%, white 20%, #F2F2F2 21%, #F2F2F2 30%, white 31%, white 35%, #F2F2F2 36%, #F2F2F2 45%, white 46%, white 49%, transparent 50%, transparent);
+  background-size:100px 50px;
+  color: #000;
+}
+
+#root {
+  padding: 40px;
+}
+
+.App {
+  background: #FFF;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  border-bottom: solid 1px #CCC;
+}
+header h1 {
+  text-transform: uppercase;
 }
 
 .MovesList {
