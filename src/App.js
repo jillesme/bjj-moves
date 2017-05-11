@@ -4,6 +4,7 @@ import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 
 import store from './redux/store.js'
 
+import Header from './Header.js';
 import SideBar from './SideBar.js';
 import Category from './Category.js';
 
@@ -18,9 +19,11 @@ class ActualApp extends Component {
     return (
       <Provider store={store}>
         <div className="App">
+          <Header></Header>
+          
           <SideBar>
             {Object.keys(moves).map((move, k) => {
-            return <Category key={k} title={move} items={moves[move]} />
+              return <Category key={k} title={move} items={moves[move]} />
             })}
           </SideBar>
 
