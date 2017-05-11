@@ -46,6 +46,10 @@ p {
   line-height: 26px;
 }
 
+.hidden {
+  display: none;
+}
+
 #root {
   padding: 40px;
 }
@@ -65,6 +69,10 @@ header h1 {
   margin: 0;
 }
 
+.content, .MovesList {
+  min-height: calc(100vh - 80px);
+}
+
 .content {
   width: 77.5%;
   float: right;
@@ -75,19 +83,33 @@ header h1 {
   float: left;
   background: #354052;
   border-right: solid 1px #394558;
-  border-bottom: solid 1px #394558;
 }
 
 .MovesList .search,
 .MovesList > ul {
-  padding: 20px;
   border-bottom: solid 3px #2f3949;
 }
 
+.MovesList .search {
+  padding: 24px 20px;
+}
+
 .MovesList > ul {
+  padding: 20px;
   border-top: solid 1px #394558;
   list-style: none;
   margin: 0;
+  position: relative;
+}
+.MovesList > ul:last-child:after {
+  content: '';
+  height: 1px;
+  background: #394558;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 .MovesList li {
   list-style: none;
